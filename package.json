@@ -1,0 +1,9 @@
+{
+  "name": "maramis-japan-2027",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first itinerary PWA for the Maramis family trip to Tokyo & Hokkaido, Feb 2027.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173"
+  }
+}

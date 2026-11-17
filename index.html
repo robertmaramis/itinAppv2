@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maramis Japan 2027</title>
+<meta name="description" content="Offline itinerary app for the Maramis family trip to Tokyo &amp; Hokkaido, Feb 2027.">
+<meta name="theme-color" content="#141926">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="4" width="14" height="13" rx="3"/>
+    <path d="M5 13h14M8 17l-2 3M16 17l2 3"/>
+    <circle cx="9" cy="13" r=".4"/><circle cx="15" cy="13" r=".4"/>
+  </symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/>
+    <path d="M3 18v2M21 18v2M3 13h18"/>
+    <rect x="5" y="8" width="6" height="3" rx="1"/>
+  </symbol>
+  <symbol id="i-bowl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 12h16a8 7 0 0 1-16 0Z"/>
+    <path d="M9 9c-.6-1 .2-2 .2-3M14 9c.6-1-.2-2-.2-3"/>
+  </symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/>
+    <circle cx="12" cy="13.5" r="3.3"/>
+  </symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 8h12l1 12.5H5L6 8Z"/>
+    <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+  </symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 6l-6 6 6 6"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14M13 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 11.5 3 6l1.8 4.2L13 12l-8.2 1.8L3 18l18-5.5-0.5-1Z"/>
+  </symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3.5" y="5" width="17" height="15" rx="2.5"/>
+    <path d="M3.5 9.5h17M8 3v4M16 3v4"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7h16M4 12h16M4 17h10"/>
+    <path d="M18 15l2 2 3-3" stroke-width="2"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z"/>
+    <circle cx="12" cy="9.5" r="2.4"/>
+  </symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 11v6"/>
+    <circle cx="12" cy="7.5" r=".9" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="i-petal" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+    <path d="M12 2.6c3.4 2.7 6.4 6.3 6.4 10a6.4 6.4 0 1 1-12.8 0c0-3.7 3-7.3 6.4-10Z"/>
+  </symbol>
+  <symbol id="i-torii" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 6.8c3-1.5 6.2-2.3 9.5-2.3s6.5.8 9.5 2.3"/>
+    <path d="M1.5 9.6h21"/>
+    <path d="M6 9.6v11.8M18 9.6v11.8"/>
+    <path d="M9.3 13.6h5.4"/>
+  </symbol>
+</svg>
+
+<div class="sakura-layer" id="sakuraLayer" aria-hidden="true"></div>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="topbar-row">
+      <div class="topbar-id">
+        <div class="greeting"><svg class="inline-icon"><use href="#i-torii"/></svg><span id="greeting">ようこそ</span></div>
+        <h1 id="tripTitle">Maramis Japan 2027</h1>
+        <div class="topbar-meta">
+          <span class="field" id="tripDates">11 – 25 Feb</span>
+          <span class="divider"></span>
+          <span class="field" id="tripDest">Hokkaido &amp; Tokyo</span>
+        </div>
+      </div>
+      <button class="sync-pill" id="syncBtn" type="button">
+        <span class="dot stale" id="syncDot"></span>
+        <span id="syncLabel">Sync</span>
+      </button>
+    </div>
+  </header>
+  <div class="wave-strip" aria-hidden="true"></div>
+
+  <main>
+    <section id="view-places" class="view" data-view="places" hidden>
+      <div id="placesList"></div>
+    </section>
+
+    <section id="view-itinerary" class="view" data-view="itinerary">
+      <div id="dayList" class="day-list"></div>
+    </section>
+
+    <section id="view-flights" class="view" data-view="flights" hidden>
+      <div id="flightsList"></div>
+    </section>
+
+    <section id="view-overview" class="view" data-view="overview" hidden>
+      <div id="overviewBody"></div>
+    </section>
+
+    <section id="view-bucket" class="view" data-view="bucket" hidden>
+      <div id="bucketBody"></div>
+      <input type="file" accept="image/*" capture="environment" id="bucketPhotoInput" hidden>
+    </section>
+  </main>
+
+  <div class="wave-strip" aria-hidden="true"></div>
+  <nav class="tabbar">
+    <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+    <button class="tabbtn" data-view="places" type="button"><svg><use href="#i-pin"/></svg><span>Places</span></button>
+    <button class="tabbtn active" data-view="itinerary" type="button"><svg><use href="#i-calendar"/></svg><span>Itinerary</span></button>
+    <button class="tabbtn" data-view="flights" type="button"><svg><use href="#i-plane"/></svg><span>Flights</span></button>
+    <button class="tabbtn" data-view="overview" type="button"><svg><use href="#i-info"/></svg><span>Overview</span></button>
+    <button class="tabbtn" data-view="bucket" type="button"><svg><use href="#i-check"/></svg><span>Bucket List</span></button>
+  </nav>
+</div>
+
+<script src="js/parser.js"></script>
+<script src="js/store.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/sheet-sync.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
