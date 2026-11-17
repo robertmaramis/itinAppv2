@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const APP_CACHE = `japan2027-app-${CACHE_VERSION}`;
 const DATA_CACHE = `japan2027-data-${CACHE_VERSION}`;
 
@@ -17,6 +17,7 @@ const APP_SHELL = [
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
   './icons/apple-touch-icon.png',
+  './icons/logo-badge.png',
 ];
 
 self.addEventListener('install', (event) => {
