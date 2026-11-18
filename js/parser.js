@@ -9,6 +9,9 @@
   const DATE_RE = /^\d{1,2}\/\d{1,2}$/;
   const FLIGHT_KEYWORD_RE = /transit|flight|layover|airline/i;
   const CODE_RE = /^[A-Z0-9][A-Z0-9-]{2,9}$/;
+  // Flight number suffix on a connector row, e.g. "Airline and flight #CA-978"
+  // or "Flight - 1h 35m HD-37" (the "#" is optional).
+  const FLIGHT_CODE_RE = /#?\s*([A-Za-z]{1,3}-?\d{2,4})\s*$/;
 
   function cell(row, i) {
     if (!row) return '';
@@ -63,12 +66,12 @@
       const headC6 = cell(row, 6);
 
       let legTitle = headC6 || '';
+      let legFlightCode = '';
       let dayTitle = '';
-      let dayConfirmation = '';
 
       if (FLIGHT_KEYWORD_RE.test(headC3)) {
-        const m = headC3.match(/#(\S+)/);
-        if (m) dayConfirmation = m[1];
+        const m = headC3.match(FLIGHT_CODE_RE);
+        if (m) legFlightCode = m[1].toUpperCase();
         dayTitle = headC6 || headC3;
       } else {
         dayTitle = headC3 || headC6 || '';
@@ -83,7 +86,7 @@
         date,
         dayOfWeek,
         title: dayTitle,
-        confirmation: dayConfirmation,
+        confirmation: '',
         flights: [],
         activities: [],
       };
@@ -126,6 +129,7 @@
             airportName,
             confirmation,
             legTitle,
+            flightCode: legFlightCode,
             notes: cell(data, 6),
           };
           day.flights.push(entry);
@@ -137,6 +141,8 @@
         // Connector row: "Transit - 3h 45m", "Flight - 1h 35m", "Layover", "Airline and flight #..."
         if (FLIGHT_KEYWORD_RE.test(c3)) {
           if (c6) legTitle = c6;
+          const codeMatch = c3.match(FLIGHT_CODE_RE);
+          legFlightCode = codeMatch ? codeMatch[1].toUpperCase() : '';
           lastEntry = null;
           j++;
           continue;
@@ -182,6 +188,7 @@
             date: day.date,
             dayOfWeek: day.dayOfWeek,
             legTitle: entry.legTitle,
+            flightCode: entry.flightCode || '',
             confirmation: entry.confirmation || day.confirmation || '',
             departTime: entry.time,
             departAirport: entry.airport,

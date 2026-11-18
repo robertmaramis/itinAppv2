@@ -6,12 +6,12 @@
       "Robert Maramis",
       "Yesiska Erliyana",
       "Reni Maramis",
-      "Tjia She Lien",
-      "Yana Erliyana",
       "Tuti Lina",
-      "Hiro Maramis",
       "Hide Maramis",
-      "Hime Maramis"
+      "Tjia She Lien",
+      "Hiro Maramis",
+      "Hime Maramis",
+      "Yana Erliyana"
     ],
     "dates": "11/02 - 25-02",
     "destination": "Tokyo, Hokkaido - Japan"
@@ -21,19 +21,19 @@
       "date": "11/02",
       "dayOfWeek": "THU",
       "title": "Jakarta to Beijing",
-      "confirmation": "MY6MG2",
+      "confirmation": "",
       "flights": [
-        { "action": "Depart", "time": "00:05", "airport": "CGK", "airportName": "Soekarno Hatta International Airport", "confirmation": "", "legTitle": "Jakarta to Beijing", "notes": "Terminal 3" },
-        { "action": "Arrive", "time": "07:55", "airport": "PEK", "airportName": "Beijing Capital International", "confirmation": "", "legTitle": "Jakarta to Beijing", "notes": "" },
-        { "action": "Depart", "time": "11:40", "airport": "PEK", "airportName": "Beijing Capital International", "confirmation": "", "legTitle": "Beijing to Tokyo", "notes": "" },
-        { "action": "Arrive", "time": "16:20", "airport": "HND", "airportName": "Haneda International Airport", "confirmation": "", "legTitle": "Beijing to Tokyo", "notes": "" },
-        { "action": "Depart", "time": "20:15", "airport": "HND", "airportName": "Haneda International Airport", "confirmation": "", "legTitle": "Tokyo to Hokkaido", "notes": "" },
-        { "action": "Arrive", "time": "21:50", "airport": "CTS", "airportName": "New Chitose Airport", "confirmation": "", "legTitle": "Tokyo to Hokkaido", "notes": "" }
+        {"action":"Depart","time":"00:05","airport":"CGK","airportName":"Soekarno Hatta International Airport","confirmation":"","legTitle":"Jakarta to Beijing","flightCode":"CA-978","notes":"Terminal 3"},
+        {"action":"Arrive","time":"07:55","airport":"PEK","airportName":"Beijing Capital International","confirmation":"","legTitle":"Jakarta to Beijing","flightCode":"CA-978","notes":""},
+        {"action":"Depart","time":"11:40","airport":"PEK","airportName":"Beijing Capital International","confirmation":"","legTitle":"Beijing to Tokyo","flightCode":"CA-167","notes":""},
+        {"action":"Arrive","time":"16:20","airport":"HND","airportName":"Haneda International Airport","confirmation":"","legTitle":"Beijing to Tokyo","flightCode":"CA-167","notes":""},
+        {"action":"Depart","time":"20:15","airport":"HND","airportName":"Haneda International Airport","confirmation":"","legTitle":"Tokyo to Hokkaido","flightCode":"HD-37","notes":""},
+        {"action":"Arrive","time":"21:50","airport":"CTS","airportName":"New Chitose Airport","confirmation":"","legTitle":"Tokyo to Hokkaido","flightCode":"HD-37","notes":""}
       ],
       "activities": [
-        { "time": "21:50-22:40", "label": "Imigrasi & baggage", "notes": "" },
-        { "time": "22:40-22:50", "label": "To hotel JR INN Chitose via Rapid Airport - 2 stop", "notes": "" },
-        { "time": "22:50", "label": "Check in & rest", "notes": "" }
+        {"time":"21:50-22:40","label":"Imigrasi & baggage","notes":""},
+        {"time":"22:40-22:50","label":"To hotel JR INN Chitose via Rapid Airport - 2 stop","notes":""},
+        {"time":"22:50","label":"Check in & rest","notes":""}
       ]
     },
     {
@@ -43,19 +43,19 @@
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "07:00-08:00", "label": "Preparation", "notes": "Prepare and Checkout" },
-        { "time": "08:00-08:58", "label": "Train to Hokkaido", "notes": "Rapid Airport 3 stop to Sapporo stn, Sapporo - Nakajimakoen Stn 3 Stop, exit 1" },
-        { "time": "09:00-09:15", "label": "Drop baggage on Hotel", "notes": "Ibis Style" },
-        { "time": "09:30-10:30", "label": "Kinotoya cafe", "notes": "naek metro 2 stop" },
-        { "time": "10:30-11:30", "label": "Strolling Odori Park & Tv tower", "notes": "Strolling ke arah TV tower and Nijo Market" },
-        { "time": "12:30-14:00", "label": "Lunch", "notes": "Nijo Market, Donburi Chaya, Donbe waiting list expected" },
-        { "time": "14:00-14:46", "label": "Otw to Shiroi Kobito park", "notes": "Tozai Line - Buscenter mae stn - Miyanosawa Stn 9 Stop, exit 2" },
-        { "time": "14:46-16:40", "label": "Strolling Shiroi Kobito", "notes": "" },
-        { "time": "16:40-17:20", "label": "Otw to Odori", "notes": "Miyanosawa Stn - Odori Stn 8 stop, arah exit 9" },
-        { "time": "", "label": "Explore sapporo", "notes": "Opsi: Balik ke Tv tower foto pas malem · MEGA Don Quijote Sapporo Tanukikoji Honten" },
-        { "time": "", "label": "Dinner", "notes": "Susukino Street" },
-        { "time": "", "label": "Strolling back", "notes": "Ramen Alley / Jingisukan Daruma · Walk / Metro" },
-        { "time": "", "label": "Rest", "notes": "" }
+        {"time":"07:00-08:00","label":"Preparation","notes":"Prepare and Checkout"},
+        {"time":"08:00-08:58","label":"Train to Hokkaido","notes":"Rapid Airport 3 stop to Sapporo stn, Sapporo - Nakajimakoen Stn 3 Stop, exit 1"},
+        {"time":"09:00-09:15","label":"Drop baggage on Hotel","notes":"Ibis Style"},
+        {"time":"09:30-10:30","label":"Kinotoya cafe","notes":"naek metro 2 stop"},
+        {"time":"10:30-11:30","label":"Strolling Odori Park & Tv tower","notes":"Strolling ke arah TV tower and Nijo Market"},
+        {"time":"12:30-14:00","label":"Lunch","notes":"Nijo Market, Donburi Chaya, Donbe waiting list expected"},
+        {"time":"14:00-14:46","label":"Otw to Shiroi Kobito park","notes":"Tozai Line - Buscenter mae stn - Miyanosawa Stn 9 Stop, exit 2"},
+        {"time":"14:46-16:40","label":"Strolling Shiroi Kobito","notes":""},
+        {"time":"16:40-17:20","label":"Otw to Odori","notes":"Miyanosawa Stn - Odori Stn 8 stop, arah exit 9,"},
+        {"time":"","label":"Explore sapporo","notes":"Opsi: Balik ke Tv tower foto pas malem · MEGA Don Quijote Sapporo Tanukikoji Honten"},
+        {"time":"","label":"Dinner","notes":"Susukino Street"},
+        {"time":"","label":"Strolling back","notes":"Ramen Alley / Jingisukan Daruma · Walk / Metro"},
+        {"time":"","label":"Rest","notes":""}
       ]
     },
     {
@@ -65,18 +65,18 @@
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "06:30-07:40", "label": "Siap-siap", "notes": "" },
-        { "time": "08:00", "label": "Di jemput untuk ke Asahiyama", "notes": "" },
-        { "time": "08:00-10:30", "label": "Otw to Asahiyama Zoo", "notes": "" },
-        { "time": "", "label": "Lunch", "notes": "" },
-        { "time": "13:00-13:40", "label": "otw to Biei", "notes": "" },
-        { "time": "13:40-14:15", "label": "Christmas tree", "notes": "" },
-        { "time": "14:15-14:45", "label": "to Shirahige Waterfall", "notes": "" },
-        { "time": "14:45-15:30", "label": "Shirahige Waterfall", "notes": "https://maps.app.goo.gl/GZb7oSGkBuFX7Mx86" },
-        { "time": "15:30-16:10", "label": "to Ningle Terrace", "notes": "" },
-        { "time": "16:10-17:00", "label": "Ningle Terrace", "notes": "https://maps.app.goo.gl/WrgbmxFeWspUQ8t5A" },
-        { "time": "18:00", "label": "Dinner", "notes": "ジンギスカン盆賊衆(ボンゾク)" },
-        { "time": "", "label": "Back to Hotel", "notes": "" }
+        {"time":"06:30-07:40","label":"Siap-siap","notes":""},
+        {"time":"08:00","label":"Di jemput untuk ke Asahiyama","notes":""},
+        {"time":"08:00-10:30","label":"Otw to Asahiyama Zoo","notes":""},
+        {"time":"","label":"Lunch","notes":""},
+        {"time":"13:00-13:40","label":"otw to Biei","notes":""},
+        {"time":"13:40-14:15","label":"Christmas tree","notes":""},
+        {"time":"14:15-14:45","label":"to Shirahige Waterfall","notes":""},
+        {"time":"14:45-15:30","label":"Shirahige Waterfall","notes":"https://maps.app.goo.gl/GZb7oSGkBuFX7Mx86"},
+        {"time":"15:30-16:10","label":"to Ningle Terrace","notes":""},
+        {"time":"16:10-17:00","label":"Ningle Terrace","notes":"https://maps.app.goo.gl/WrgbmxFeWspUQ8t5A"},
+        {"time":"18:00","label":"Dinner","notes":"ジンギスカン盆賊衆(ボンゾク)"},
+        {"time":"","label":"Back to Hotel","notes":""}
       ]
     },
     {
@@ -86,18 +86,18 @@
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "07:00-08:50", "label": "Preparation", "notes": "" },
-        { "time": "09:00-09:05", "label": "Otw to Sapporo stn", "notes": "Namboku line - Nakajimakoen Station to Sapporo stn 3 stop" },
-        { "time": "09:10-10:10", "label": "Otw to Otaru", "notes": "Rapid Airport - Sapporo stn to Otaru stn 6 stop" },
-        { "time": "10:10-10:30", "label": "to Canal", "notes": "" },
-        { "time": "10:30-11:00", "label": "Strolling Canal", "notes": "" },
-        { "time": "11:00-11:15", "label": "to Sakaimachi Street", "notes": "" },
-        { "time": "12:15-13:45", "label": "Lunch", "notes": "" },
-        { "time": "13:45-17:00", "label": "Strolling Sakaimachi Street", "notes": "" },
-        { "time": "17:00-17:20", "label": "Balik ke canal", "notes": "Strolling canal malam" },
-        { "time": "17:20-19:00", "label": "Dinner", "notes": "" },
-        { "time": "19:00-20:00", "label": "otw Back to Sapporo", "notes": "Rapid Airport" },
-        { "time": "20:00", "label": "Shopping Sapporo", "notes": "Ramen Alley" }
+        {"time":"07:00-08:50","label":"Preparation","notes":""},
+        {"time":"09:00-09:05","label":"Otw to Sapporo stn","notes":"Namboku line - Nakajimakoen Station to Sapporo stn 3 stop"},
+        {"time":"09:10-10:10","label":"Otw to Otaru","notes":"Rapid Airport - Sapporo stn to Otaru stn 6 stop"},
+        {"time":"10:10-10:30","label":"to Canal","notes":""},
+        {"time":"10:30-11:00","label":"Strolling Canal","notes":""},
+        {"time":"11:00-11:15","label":"to Sakaimachi Street","notes":""},
+        {"time":"12:15-13:45","label":"Lunch","notes":""},
+        {"time":"13:45-17:00","label":"Strolling Sakaimachi Street","notes":""},
+        {"time":"17:00-17:20","label":"Balik ke canal","notes":"Strolling canal malam"},
+        {"time":"17:20-19:00","label":"Dinner","notes":""},
+        {"time":"19:00-20:00","label":"otw Back to Sapporo","notes":"Rapid Airport"},
+        {"time":"20:00","label":"Shopping Sapporo","notes":"Ramen Alley"}
       ]
     },
     {
@@ -105,17 +105,20 @@
       "dayOfWeek": "MON",
       "title": "Hokkaido to Tokyo",
       "confirmation": "",
-      "flights": [],
+      "flights": [
+        {"action":"Depart","time":"15:00","airport":"CTS","airportName":"New Chitose Airport","confirmation":"","legTitle":"Hokkaido to Tokyo","flightCode":"HD-26","notes":""},
+        {"action":"Arrive","time":"16:40","airport":"HND","airportName":"Haneda International Airport","confirmation":"","legTitle":"Hokkaido to Tokyo","flightCode":"HD-26","notes":""}
+      ],
       "activities": [
-        { "time": "08:00-11:00", "label": "Free day", "notes": "" },
-        { "time": "11:00", "label": "Checkout", "notes": "" },
-        { "time": "", "label": "Lunch", "notes": "" },
-        { "time": "12:00-12:40", "label": "Otw to Airport", "notes": "" },
-        { "time": "15:00-16:40", "label": "Fly to Tokyo", "notes": "" },
-        { "time": "16:40-18:00", "label": "Bagage Claim", "notes": "" },
-        { "time": "", "label": "Dinner", "notes": "" },
-        { "time": "19:00-20:00", "label": "otw AirBNB", "notes": "" },
-        { "time": "", "label": "Rest", "notes": "" }
+        {"time":"08:00-11:00","label":"Free day","notes":""},
+        {"time":"11:00","label":"Checkout","notes":""},
+        {"time":"","label":"Lunch","notes":""},
+        {"time":"12:00-12:40","label":"Otw to Airport","notes":""},
+        {"time":"15:00-16:40","label":"Fly to Tokyo","notes":""},
+        {"time":"16:40-18:00","label":"Bagage Claim","notes":""},
+        {"time":"","label":"Dinner","notes":""},
+        {"time":"19:00-20:00","label":"otw AirBNB","notes":""},
+        {"time":"","label":"Rest","notes":""}
       ]
     },
     {
@@ -125,22 +128,22 @@
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "06:00-07:00", "label": "Prepare", "notes": "mengejar waktu terbaik untuk foto chureito" },
-        { "time": "07:00", "label": "Pickup di hotel", "notes": "" },
-        { "time": "07:00-09:00", "label": "otw to Chureito Pagoda", "notes": "" },
-        { "time": "09:00-10:03", "label": "Chureito Pagoda", "notes": "Strolling and photo, jalan ke atas butuh waktu 10-20 menit, menanjak" },
-        { "time": "10:30-10:45", "label": "Lawson Fujikawaguchiko", "notes": "" },
-        { "time": "10:45-11:15", "label": "foto", "notes": "" },
-        { "time": "11:15-12:15", "label": "Lunch", "notes": "Shaw sushi" },
-        { "time": "12:15-12:35", "label": "otw to Oshino hakkai", "notes": "" },
-        { "time": "12:35-13:35", "label": "Oshino hakkai", "notes": "" },
-        { "time": "13:35-14:20", "label": "Otw Gotemba", "notes": "" },
-        { "time": "14:20-15:00", "label": "Shopping", "notes": "" },
-        { "time": "15:00-15:50", "label": "otw to Fujisan Yume No Ōhashi Bridge", "notes": "" },
-        { "time": "15:50-16:20", "label": "foto", "notes": "" },
-        { "time": "16:20-17:00", "label": "Balik ke gotemba", "notes": "" },
-        { "time": "17:00-18:00", "label": "waiting for Shopping", "notes": "dinner / nyemil" },
-        { "time": "18:00-20:00", "label": "Back to Tokyo", "notes": "Dinner kalo belom" }
+        {"time":"06:00-07:00","label":"Prepare","notes":"mengejar waktu terbaik untuk foto chureito,"},
+        {"time":"07:00","label":"Pickup di hotel","notes":""},
+        {"time":"07:00-09:00","label":"otw to Chureito Pagoda","notes":""},
+        {"time":"09:00-10:03","label":"Chureito Pagoda","notes":"Strolling and photo, jalan ke atas butuh waktu 10-20 menit, menanjak"},
+        {"time":"10:30-10:45","label":"Lawson Fujikawaguchiko","notes":""},
+        {"time":"10:45-11:15","label":"foto","notes":""},
+        {"time":"11:15-12:15","label":"Lunch","notes":"Shaw sushi"},
+        {"time":"12:15-12:35","label":"otw to Oshino hakkai","notes":""},
+        {"time":"12:35-13:35","label":"Oshino hakkai","notes":""},
+        {"time":"13:35-14:20","label":"Otw Gotemba","notes":""},
+        {"time":"14:20-15:00","label":"Shopping","notes":""},
+        {"time":"15:00-15:50","label":"otw to Fujisan Yume No Ōhashi Bridge","notes":""},
+        {"time":"15:50-16:20","label":"foto","notes":""},
+        {"time":"16:20-17:00","label":"Balik ke gotemba","notes":""},
+        {"time":"17:00-18:00","label":"waiting for Shopping","notes":"dinner / nyemil"},
+        {"time":"18:00-20:00","label":"Back to Tokyo","notes":"Dinner kalo belom"}
       ]
     },
     {
@@ -150,81 +153,118 @@
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "05:00-05:30", "label": "preparing & otw", "notes": "" },
-        { "time": "07:05-10:29", "label": "otw to Oishida", "notes": "" },
-        { "time": "10:29-11:00", "label": "Oishida to Ginzan", "notes": "by bus, booking bus" },
-        { "time": "11:00-18:00", "label": "Strolling ginzan", "notes": "" },
-        { "time": "20:00-20:20", "label": "otw to yamagata", "notes": "" },
-        { "time": "", "label": "stay yamagata", "notes": "" },
-        { "time": "11:00-15:00", "label": "back to Tokyo", "notes": "" }
+        {"time":"05:00-05:30","label":"preparing & otw","notes":""},
+        {"time":"07:05-10:29","label":"otw to Oishida","notes":""},
+        {"time":"10:29-11:00","label":"Oishida to Ginzan","notes":"by bus, booking bus,"},
+        {"time":"11:00-18:00","label":"Strolling ginzan","notes":""},
+        {"time":"20:00-20:20","label":"otw to yamagata","notes":""},
+        {"time":"","label":"stay yamagata","notes":""}
       ]
     },
     {
       "date": "18/02",
       "dayOfWeek": "THU",
+      "title": "Ginzan - Tokyo",
+      "confirmation": "",
+      "flights": [],
+      "activities": [
+        {"time":"11:00-15:00","label":"back to Tokyo","notes":""}
+      ]
+    },
+    {
+      "date": "19/02",
+      "dayOfWeek": "FRI",
       "title": "Kamakura",
       "confirmation": "",
       "flights": [],
       "activities": [
-        { "time": "07:00-07:42", "label": "Preparation", "notes": "" },
-        { "time": "07:42-09:23", "label": "otw to Kamakura", "notes": "Minowa-Hibiya line, 1 stop ke Ueno, ganti ke Utsunomiya line, 7 stop Fujisawa Stn ganti ke Enoden line" },
-        { "time": "09:23-10:20", "label": "Foto Spot", "notes": "Slam dunk iconic shoot, foto di pantai Shichirigahama with Fuji" },
-        { "time": "10:20-10:30", "label": "to Bills", "notes": "dari kamakurakoko mae shicirigahama stn" },
-        { "time": "10:30-11:30", "label": "Brunch", "notes": "" },
-        { "time": "11:30-11:45", "label": "to Hase stn", "notes": "" },
-        { "time": "11:45-12:00", "label": "to Hase-dera", "notes": "" },
-        { "time": "12:00-12:30", "label": "Strolling hase dera", "notes": "" },
-        { "time": "12:30-12:50", "label": "otw to Kotoku in", "notes": "" },
-        { "time": "12:50-13:30", "label": "Strolling kotoku", "notes": "" },
-        { "time": "13:30-13:45", "label": "otw to komachi street", "notes": "naek bus F11-6 stop" },
-        { "time": "13:45-15:00", "label": "strolling komachi street, Late lunch", "notes": "" },
-        { "time": "15:00-16:00", "label": "Tsurugaoka", "notes": "" },
-        { "time": "", "label": "opsi, kamakurakoko mae", "notes": "" },
-        { "time": "", "label": "enoshima", "notes": "" },
-        { "time": "", "label": "Back to Tokyo", "notes": "" }
+        {"time":"07:00-07:42","label":"Preparation","notes":""},
+        {"time":"07:42-09:23","label":"otw to Kamakura","notes":"Minowa-Hibiya line, 1 stop ke Ueno, ganti ke Utsunomiya line, 7 stop Fujisawa Stn ganti ke Enoden line"},
+        {"time":"09:23-10:20","label":"Foto Spot","notes":"Slam dunk iconic shoot, foto di pantai Shichirigahama with Fuji"},
+        {"time":"10:20-10:30","label":"to Bills","notes":"dari kamakurakoko mae shicirigahama stn"},
+        {"time":"10:30-11:30","label":"Brunch","notes":""},
+        {"time":"11:30-11:45","label":"to Hase stn","notes":""},
+        {"time":"11:45-12:00","label":"to Hase-dera","notes":""},
+        {"time":"12:00-12:30","label":"Strolling hase dera","notes":""},
+        {"time":"12:30-12:50","label":"otw to Kotoku in","notes":""},
+        {"time":"12:50-13:30","label":"Strolling kotoku","notes":""},
+        {"time":"13:30-13:45","label":"otw to komachi street","notes":"naek bus F11-6 stop"},
+        {"time":"13:45-15:00","label":"strolling komachi street, Late lunch","notes":""},
+        {"time":"15:00-16:00","label":"Tsurugaoka","notes":""},
+        {"time":"","label":"opsi, kamakurakoko mae","notes":""},
+        {"time":"","label":"enoshima","notes":""},
+        {"time":"","label":"Back to Tokyo","notes":""}
       ]
     },
-    { "date": "19/02", "dayOfWeek": "FRI", "title": "Tokyo", "confirmation": "", "flights": [], "activities": [] },
-    { "date": "20/02", "dayOfWeek": "SAT", "title": "Tokyo", "confirmation": "", "flights": [], "activities": [] },
-    { "date": "21/02", "dayOfWeek": "SUN", "title": "Tokyo", "confirmation": "", "flights": [], "activities": [] },
-    { "date": "22/02", "dayOfWeek": "MON", "title": "Tokyo", "confirmation": "", "flights": [], "activities": [] },
+    {
+      "date": "20/02",
+      "dayOfWeek": "SAT",
+      "title": "Tokyo",
+      "confirmation": "",
+      "flights": [],
+      "activities": []
+    },
+    {
+      "date": "21/02",
+      "dayOfWeek": "SUN",
+      "title": "Tokyo",
+      "confirmation": "",
+      "flights": [],
+      "activities": []
+    },
+    {
+      "date": "22/02",
+      "dayOfWeek": "MON",
+      "title": "Tokyo",
+      "confirmation": "",
+      "flights": [],
+      "activities": []
+    },
     {
       "date": "23/02",
       "dayOfWeek": "TUE",
-      "title": "Hotel name",
+      "title": "To Jkt we go",
       "confirmation": "",
       "flights": [
-        { "action": "Depart", "time": "16:05", "airport": "JFK", "airportName": "", "confirmation": "ABC123", "legTitle": "New York to London", "notes": "2 hr layover" },
-        { "action": "Arrive", "time": "07:45", "airport": "LHR", "airportName": "", "confirmation": "", "legTitle": "New York to London", "notes": "" }
+        {"action":"Depart","time":"08:30","airport":"HND","airportName":"Haneda International Airport","confirmation":"","legTitle":"Tokyo to Beijing","flightCode":"CA-184","notes":""},
+        {"action":"Arrive","time":"01:40","airport":"PEK","airportName":"Beijing Capital International","confirmation":"","legTitle":"Tokyo to Beijing","flightCode":"CA-184","notes":""},
+        {"action":"Depart","time":"15:40","airport":"PEK","airportName":"Beijing Capital International","confirmation":"","legTitle":"Beijing to Jakarta","flightCode":"CA-977","notes":""},
+        {"action":"Arrive","time":"22:30","airport":"CGK","airportName":"Soekarno Hatta International Airport","confirmation":"","legTitle":"Beijing to Jakarta","flightCode":"CA-977","notes":""}
       ],
       "activities": [
-        { "time": "17:25", "label": "BOS", "notes": "" }
+        {"time":"03:30","label":"Preparation","notes":""},
+        {"time":"04:30","label":"OTW to Haneda","notes":"Using airport transfer"}
       ]
     }
   ],
   "bucketList": [
-    { "id": "b0", "text": "Berburu saltbread" },
-    { "id": "b1", "text": "Gachapon" },
-    { "id": "b2", "text": "Ngerekam bocil ntn menghantam mochi" },
-    { "id": "b3", "text": "Eat strawberry everyday in japan" },
-    { "id": "b4", "text": "main capit" },
-    { "id": "b5", "text": "masuk sex shop" },
-    { "id": "b6", "text": "maen salju" },
-    { "id": "b7", "text": "snow ball fight" },
-    { "id": "b8", "text": "Makan sando" },
-    { "id": "b9", "text": "Makan Onigiri" },
-    { "id": "b10", "text": "Makan takoyaki" },
-    { "id": "b11", "text": "Makan okonomiyaki" },
-    { "id": "b12", "text": "berendem onsen" },
-    { "id": "b13", "text": "Ramen Ichiran" },
-    { "id": "b14", "text": "Makan sushi" },
-    { "id": "b15", "text": "Egg tart hokaido" },
-    { "id": "b16", "text": "Nge beer" },
-    { "id": "b17", "text": "Manggang daging" },
-    { "id": "b18", "text": "Gyoza" },
-    { "id": "b19", "text": "Malem malem ke konbini" },
-    { "id": "b20", "text": "Foto Fuji" },
-    { "id": "b21", "text": "Strawbery festival yokohama" },
-    { "id": "b22", "text": "Famima Park Azabudai" }
+    {"id":"b0","text":"Berburu saltbread"},
+    {"id":"b1","text":"Gachapon"},
+    {"id":"b2","text":"Ngerekam bocil ntn menghantam mochi (not possible)"},
+    {"id":"b3","text":"Eat strawberry everyday in japan"},
+    {"id":"b4","text":"main capit"},
+    {"id":"b5","text":"masuk sex shop"},
+    {"id":"b6","text":"maen salju"},
+    {"id":"b7","text":"snow ball fight"},
+    {"id":"b8","text":"Makan sando"},
+    {"id":"b9","text":"Makan Onigiri"},
+    {"id":"b10","text":"Makan takoyaki"},
+    {"id":"b11","text":"Makan okonomiyaki"},
+    {"id":"b12","text":"berendem onsen"},
+    {"id":"b13","text":"Ramen Ichiran"},
+    {"id":"b14","text":"Makan sushi"},
+    {"id":"b15","text":"Egg tart hokaido"},
+    {"id":"b16","text":"Nge beer"},
+    {"id":"b17","text":"Manggang daging"},
+    {"id":"b18","text":"Gyoza"},
+    {"id":"b19","text":"Malem malem ke konbini"},
+    {"id":"b20","text":"Foto Fuji"},
+    {"id":"b21","text":"Strawbery festival yokohama"},
+    {"id":"b22","text":"Famima Park Azabudai"},
+    {"id":"b23","text":"Gorila Things on donquiote's"},
+    {"id":"b24","text":"Macha latte 7-11"},
+    {"id":"b25","text":"Cream puff"},
+    {"id":"b26","text":"Sweat Treats"},
+    {"id":"b27","text":"Foto Pagoda and fuji"}
   ]
 }

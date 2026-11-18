@@ -220,6 +220,7 @@
           <span class="seg">${escapeHtml(leg.arriveAirport || '?')}</span>
         </div>
         <div class="ticket-row"><span>${escapeHtml(leg.legTitle || '')}</span><b>${escapeHtml(leg.departTime)} → ${escapeHtml(leg.arriveTime)}</b></div>
+        ${leg.flightCode ? `<div class="ticket-row"><span>Flight</span><b class="mono">${escapeHtml(leg.flightCode)}</b></div>` : ''}
         ${leg.confirmation ? `<div class="ticket-row"><span>Confirmation</span><b class="mono">${escapeHtml(leg.confirmation)}</b></div>` : ''}
         ${leg.departAirportName || leg.arriveAirportName ? `<div class="ticket-note">${escapeHtml([leg.departAirportName, leg.arriveAirportName].filter(Boolean).join(' → '))}</div>` : ''}
       `).join('<div class="ticket-divider"></div>') + `</div>`;
@@ -260,6 +261,10 @@
   // ---------- Flights tab ----------
 
   function flightStatusUrl(leg) {
+    if (leg.flightCode) {
+      const q = leg.flightCode.replace(/-/g, '') + ' flight status';
+      return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+    }
     const q = ['flight status', leg.departAirport, 'to', leg.arriveAirport].filter(Boolean).join(' ');
     return 'https://www.google.com/search?q=' + encodeURIComponent(q);
   }
@@ -269,8 +274,9 @@
       <div class="flight-card">
         <div class="flight-card-head">
           <span class="flight-date">${escapeHtml(leg.dayOfWeek)}, ${escapeHtml(leg.date)}</span>
-          ${leg.legTitle ? `<span class="chip mono">${escapeHtml(leg.legTitle)}</span>` : ''}
+          ${leg.flightCode ? `<span class="chip mono">${escapeHtml(leg.flightCode)}</span>` : ''}
         </div>
+        ${leg.legTitle ? `<div class="ticket-note">${escapeHtml(leg.legTitle)}</div>` : ''}
         <div class="flight-route">
           <div class="fr-side">
             <div class="fr-time">${escapeHtml(leg.departTime || '--:--')}</div>
