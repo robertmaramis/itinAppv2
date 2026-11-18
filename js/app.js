@@ -98,6 +98,45 @@
     });
   }
 
+  function effectiveTheme() {
+    const explicit = document.documentElement.getAttribute('data-theme');
+    if (explicit === 'light' || explicit === 'dark') return explicit;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function updateThemeIcon() {
+    const btn = document.getElementById('themeBtn');
+    if (!btn) return;
+    const isDark = effectiveTheme() === 'dark';
+    btn.innerHTML = `<svg><use href="#${isDark ? 'i-moon' : 'i-sun'}"/></svg>`;
+    btn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+
+  function initTheme() {
+    const stored = window.ItinStore && ItinStore.getTheme();
+    if (stored === 'light' || stored === 'dark') {
+      document.documentElement.setAttribute('data-theme', stored);
+    }
+    updateThemeIcon();
+
+    const btn = document.getElementById('themeBtn');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        if (window.ItinStore) ItinStore.setTheme(next);
+        updateThemeIcon();
+      });
+    }
+
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const current = window.ItinStore && ItinStore.getTheme();
+        if (current !== 'light' && current !== 'dark') updateThemeIcon();
+      });
+    }
+  }
+
   function updateTabIndicator() {
     const indicator = document.getElementById('tabIndicator');
     const activeBtn = document.querySelector('.tabbtn.active');
@@ -570,7 +609,8 @@
     }
     render(initial);
     initSakuraLayer();
-    attachRipple('.tabbtn, .sync-pill');
+    initTheme();
+    attachRipple('.tabbtn, .sync-pill, .theme-btn');
     updateTabIndicator();
     window.addEventListener('resize', updateTabIndicator);
 

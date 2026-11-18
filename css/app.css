@@ -180,6 +180,18 @@ button:active, .tabbtn:active, .place-row:active, .flight-status-btn:active,
 .topbar-meta .field:empty { display: none; }
 .topbar-meta .divider { flex: none; width: 1px; height: 11px; border-left: 1px dashed var(--line); }
 
+.topbar-actions { flex: none; display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+
+.theme-btn {
+  flex: none; width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--accent-2);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+.theme-btn svg { width: 17px; height: 17px; }
+
 .sync-pill {
   flex: none;
   display: flex; align-items: center; gap: 6px;
@@ -190,7 +202,6 @@ button:active, .tabbtn:active, .place-row:active, .flight-status-btn:active,
   font-size: 0.72rem; font-weight: 600;
   color: var(--ink);
   cursor: pointer;
-  margin-top: 2px;
 }
 .sync-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); flex: none; }
 .sync-pill .dot.ok { background: var(--good); }

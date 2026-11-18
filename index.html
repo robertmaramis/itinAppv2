@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var raw = localStorage.getItem('maramisJapan2027:theme');
+    var t = raw ? JSON.parse(raw) : null;
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Maramis Japan 2027</title>
 <meta name="description" content="Offline itinerary app for the Maramis family trip to Tokyo &amp; Hokkaido, Feb 2027.">
@@ -75,6 +84,13 @@
     <path d="M6 9.6v11.8M18 9.6v11.8"/>
     <path d="M9.3 13.6h5.4"/>
   </symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4.2"/>
+    <path d="M12 2.8v2.6M12 18.6v2.6M4.2 12H1.6M22.4 12h-2.6M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"/>
+  </symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 14.8A8.2 8.2 0 1 1 9.2 4a6.6 6.6 0 0 0 10.8 10.8Z"/>
+  </symbol>
 </svg>
 
 <div class="sakura-layer" id="sakuraLayer" aria-hidden="true"></div>
@@ -92,10 +108,15 @@
           <span class="field" id="tripDest">Hokkaido &amp; Tokyo</span>
         </div>
       </div>
-      <button class="sync-pill" id="syncBtn" type="button">
-        <span class="dot stale" id="syncDot"></span>
-        <span id="syncLabel">Sync</span>
-      </button>
+      <div class="topbar-actions">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+          <svg><use href="#i-sun"/></svg>
+        </button>
+        <button class="sync-pill" id="syncBtn" type="button">
+          <span class="dot stale" id="syncDot"></span>
+          <span id="syncLabel">Sync</span>
+        </button>
+      </div>
     </div>
   </header>
   <div class="wave-strip" aria-hidden="true"></div>

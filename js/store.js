@@ -5,6 +5,7 @@
 (function () {
   const DATA_KEY = 'maramisJapan2027:data';
   const CHECK_KEY = 'maramisJapan2027:bucketChecked';
+  const THEME_KEY = 'maramisJapan2027:theme';
 
   function safeGet(key) {
     try {
@@ -44,5 +45,16 @@
     return state;
   }
 
-  window.ItinStore = { save, load, getChecked, setChecked };
+  function getTheme() {
+    return safeGet(THEME_KEY);
+  }
+
+  function setTheme(theme) {
+    if (theme === 'light' || theme === 'dark') safeSet(THEME_KEY, theme);
+    else {
+      try { localStorage.removeItem(THEME_KEY); } catch (e) {}
+    }
+  }
+
+  window.ItinStore = { save, load, getChecked, setChecked, getTheme, setTheme };
 })();
