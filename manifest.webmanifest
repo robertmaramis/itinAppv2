@@ -2,7 +2,7 @@
   "name": "Maramis Japan 2027",
   "short_name": "Japan 2027",
   "description": "Offline itinerary for the Maramis family trip to Tokyo & Hokkaido, Feb 2027.",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "id": "./",
   "display": "standalone",

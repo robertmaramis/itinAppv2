@@ -1,10 +1,9 @@
-const CACHE_VERSION = 'v6';
+const CACHE_VERSION = 'v7';
 const APP_CACHE = `japan2027-app-${CACHE_VERSION}`;
 const DATA_CACHE = `japan2027-data-${CACHE_VERSION}`;
 
 const APP_SHELL = [
   './',
-  './index.html',
   './css/app.css',
   './js/parser.js',
   './js/store.js',
@@ -20,11 +19,33 @@ const APP_SHELL = [
   './icons/logo-badge.png',
 ];
 
+// iOS Safari refuses to let a service worker answer a request (especially a
+// navigation) with a response that went through a redirect — e.g. Vercel's
+// cleanUrls 308ing /index.html -> / — throwing "response served by service
+// worker has redirections". Rebuild a fresh Response to drop that flag.
+async function cleanRedirect(response) {
+  if (!response || !response.redirected) return response;
+  const body = await response.clone().blob();
+  return new Response(body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: response.headers,
+  });
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(APP_CACHE)
-      .then((cache) => cache.addAll(APP_SHELL))
+      .then((cache) =>
+        Promise.all(
+          APP_SHELL.map((url) =>
+            fetch(url)
+              .then(cleanRedirect)
+              .then((res) => cache.put(url, res))
+          )
+        )
+      )
       .then(() => self.skipWaiting())
   );
 });
@@ -61,7 +82,10 @@ self.addEventListener('fetch', (event) => {
   // App shell: cache-first, so the app itself always opens instantly offline.
   if (url.origin === self.location.origin) {
     event.respondWith(
-      caches.match(event.request).then((cached) => cached || fetch(event.request))
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return fetch(event.request).then(cleanRedirect);
+      })
     );
   }
 });
